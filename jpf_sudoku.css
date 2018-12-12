@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 6
+   Case Problem 2
+
+   Sudoku Style Sheet
+    Author: Aiden Martinez
+    Date:   12.12.2018
+
+   Filename:         jpf_sudoku.css
+
+*/
+
+/*
+==================================================
+Table Styles
+==================================================
+*/
+table.spuzzle {
+    border-collapse: collapse;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    -moz-border-collapse: collapse;
+    -moz-margin-top: 0px;
+    -moz-margin-bottom: 0px;
+    -moz-margin-left: auto;
+    -moz-margin-right: auto;
+    -moz-width: 90%;
+    -ms-border-collapse: collapse;
+    -ms-margin-top: 0px;
+    -ms-margin-bottom: 0px;
+    -ms-margin-left: auto;
+    -ms-margin-right: auto;
+    -ms-width: 90%;
+    -webkit-border-collapse: collapse;
+    -webkit-margin-top: 0px;
+    -webkit-margin-bottom: 0px;
+    -webkit-margin-left: auto;
+    -webkit-margin-right: auto;
+    -webkit-width: 90%;
+}
+
+/* The above piece of code changes the appearance (border collapse type, size of all margins (top, bottom, left, right), width) of the table with the "spuzzle" class, and adds cross-browser extensions so the code is capable of functioning in all major browsers. */
+
+td {
+    border: 5px outset gray;
+    width: 33.3%;
+    -moz-border: 5px outset gray;
+    -moz-width: 33.3%;
+    -ms-border: 5px outset gray;
+    -ms-width: 33.3%;
+    -webkit-border: 5px outset gray;
+    -webkit-width: 33.3%;
+}
+
+/* The above piece of code changes the appearance (border, width) of all <td> elements, and adds cross-browser extensions so the code is capable of functioning in all major browsers. */
+
+th {
+    color: gray;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    -moz-color: gray;
+    -moz-padding-right: 10px;
+    -moz-padding-bottom: 10px;
+    -ms-color: gray;
+    -ms-padding-right: 10px;
+    -ms-padding-bottom: 10px;
+    -webkit-color: gray;
+    -webkit-padding-right: 10px;
+    -webkit-padding-bottom: 10px;
+}
+
+/* The above piece of code changes the appearance (font color, size of the right and bottom padding) of all <th> elements, and adds cross-browser extensions so the code is capable of functioning in all major browsers. */
+
+/*
+==================================================
+Inner Table Styles
+==================================================
+*/
+table.subTable {
+    border-collapse: collapse;
+    width: 100%;
+    -moz-border-collapse: collapse;
+    -moz-width: 100%;
+    -ms-border-collapse: collapse;
+    -ms-width: 100%;
+    -webkit-border-collapse: collapse;
+    -webkit-width: 100%;
+}
+
+/* The above piece of code changes the appearance (border collapse type, width) of all tables with the "subTable" class (those tables are the tables nested in the table with the "spuzzle" class), and adds cross-browser extensions so the code is capable of functioning in all major browsers. */
+
+table.subTable td {
+    box-shadow: inset 0px 0px 15px;
+    border: 1px solid black;
+    color: blue;
+    height: 40px;
+    text-align: center;
+    -moz-box-shadow: inset 0px 0px 15px;
+    -moz-border: 1px solid black;
+    -moz-color: blue;
+    -moz-height: 40px;
+    -moz-text-align: center;
+    -ms-box-shadow: inset 0px 0px 15px;
+    -ms-border: 1px solid black;
+    -ms-color: blue;
+    -ms-height: 40px;
+    -ms-text-align: center;
+    -webkit-box-shadow: inset 0px 0px 15px;
+    -webkit-border: 1px solid black;
+    -webkit-color: blue;
+    -webkit-height: 40px;
+    -webkit-text-align: center;
+}
+
+/* The above piece of code changes the appearance (box shadow, border, font color, table cell height) of all <td> elements nested in all tables with the "subTable" class, and adds cross-browser extensions so the code is capable of functioning in all major browsers. */
+
+td.goldBox td {
+    background-color: rgb(228, 199, 42);
+    -moz-background-color: rgb(228, 199, 42);
+    -ms-background-color: rgb(228, 199, 42);
+    -webkit-background-color: rgb(228, 199, 42);
+}
+
+/* The above piece of code changes the background color of all <td> elements nested within all <td> elements with the "goldBox" class, and adds cross-browser extensions so the code is capable of functioning in all major browsers. */
+
+td.greenBox td {
+    background-color: rgb(203, 229, 130);
+    -moz-background-color: rgb(203, 229, 130);
+    -ms-background-color: rgb(203, 229, 130);
+    -webkit-background-color: rgb(203, 229, 130);
+}
+
+/* The above piece of code changes the background color of all <td> elements nested within all <td> elements with the "greenBox" class, and adds cross-browser extensions so the code is capable of functioning in all major browsers. */
